@@ -40,26 +40,17 @@ numbers = [3,4,5,6,5,23]
 prime_numbers = filter_prime(numbers)
 
 # 5
-# first method
-from itertools import permutations
-def allPermutations(S):
-    perm_arr = permutations(S)
-    return ["".join(i) for i in perm_arr]
 
-# print(allPermutations("ABC"))
-
-# second method
-
-# def ultra_shuffle(S):
-#     lenght = len(S)
-#     partial = []
-#     partial.append(S[0])  
-#     for i in range (1, lenght):
-#         for j in range(len(partial) - 1, - 1, - 1):
-#             curr = partial.pop(j)
-#             for k in range(len(curr) + 1):
-#                 partial.append(curr[:k] + S[i] + curr[k:])
-#     print(partial)
+def ultra_shuffle(S):
+    lenght = len(S)
+    partial = []
+    partial.append(S[0])  
+    for i in range (1, lenght):
+        for j in range(len(partial) - 1, - 1, - 1):
+            curr = partial.pop(j)
+            for k in range(len(curr) + 1):
+                partial.append(curr[:k] + S[i] + curr[k:])
+    print(partial)
 
 
 # 6
