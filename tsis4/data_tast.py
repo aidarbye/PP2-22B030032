@@ -4,9 +4,9 @@ from datetime import *
 # 2
 # print("today", datetime.today(), " yesterday", datetime.today() - timedelta(days=1), " tomorrow", datetime.today()+timedelta(days=1))
 # 3 
-# print("date time with microseconds:", datetime.now())
+# print("date time with microseconds:", datetime.now().replace(microsecond=0))
 # 4
 # def minus(date1,date2):
 #     diff = date1 - date2
-#     print(diff.total_seconds())
+#     print(diff.seconds)
 # minus(datetime.now(), datetime.now()-timedelta(seconds=50))
